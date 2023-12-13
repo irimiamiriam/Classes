@@ -11,12 +11,15 @@ namespace Class
     {
         static void Main(string[] args)
         {
-            Car Ford = new Car("Mustang", "white", 2021, 100);
+            Car Ford = new Car("Mustang", "white", 2021, 100, "electric");
             Car Opel = new Car("Astra", "blue", 2020, 120);
             Car Dacia = new Car("Logan");
             Ford.Display();
             Opel.Display();
-            Console.WriteLine(Dacia.name);
+            Console.WriteLine(Dacia.Name);
+            Console.WriteLine();
+            Ford.honk();
+
             Console.ReadKey();
         }
     }

@@ -6,39 +6,27 @@ using System.Threading.Tasks;
 
 namespace Class
 {
-    internal class Car
+    public class Car : Vehicle
     {
-        public string color;
-        public string name;
-        public int year;
-        public int maxSpeed;
-        public Car(string nameC, string colorC, int yearC, int maxC)
-        {
-            name = nameC;
-            color = colorC;
-            year = yearC;
-            maxSpeed = maxC;
-
+        public Car(string nameName, string colorName, int yearValue, int maxSpeedValue) 
+        { Name = nameName;
+            Color = colorName;
+            Year=yearValue;
+            MaxSpeed = maxSpeedValue;
         }
 
-        public Car (string nameC)
+        public Car(string nameName, string colorName, int yearValue, int maxSpeedValue, string eng_type)
         {
-            name = nameC;
+            Name = nameName;
+            Color = colorName;
+            Year = yearValue;
+            MaxSpeed = maxSpeedValue;
+            engine_type= eng_type;
         }
-
-        public void Display()
+        
+        public Car(string nameName)
         {
-            Console.WriteLine(name);
-            Console.WriteLine(year);
-            Console.WriteLine(color);
-            Console.WriteLine(maxSpeed);
-            fullThrottle();
-            Console.WriteLine();
+            Name = nameName;
         }
-        public void fullThrottle()
-        {
-            Console.WriteLine(name + " is going at the speed of " + maxSpeed);
-        }
-
     }
 }
