@@ -19,7 +19,6 @@ namespace Class
             Console.WriteLine(Dacia.Name);
             Console.WriteLine();
             Ford.honk();
-
             Console.ReadKey();
         }
     }
